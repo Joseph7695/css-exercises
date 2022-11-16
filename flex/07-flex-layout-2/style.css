@@ -23,6 +23,61 @@ body {
 
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+
+/* Solution */
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+a {
+  font-size: 24px;
+  color: white;
+  text-decoration-line: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+
+.sidebar {
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+.cards {
+  padding: 32px;
+  gap: 16px;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.header,
+.footer {
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+
+  display: flex;
+  align-items: center;
 }
